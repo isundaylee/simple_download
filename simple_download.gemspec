@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = SimpleDownload::VERSION
   spec.authors       = ["Jiahao Li"]
   spec.email         = ["isundaylee.reg@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = "Handles basic download functionalities. "
+  spec.summary       = "Handles basic download functionalities, including progress reporting. "
+  spec.homepage      = "http://ljh.me"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -20,4 +20,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+
+  spec.add_runtime_dependency "httpclient"
 end
